@@ -45,7 +45,7 @@ router.post("/add-city", function (req, res, next) {
     if (exist == false && dataAPI.name) {
         cityList.push({
             name: req.body.cityname,
-            img: dataAPI.weather[0].icon,
+            img: http://openweathermap.org/dataAPI.weather[0].icon,
             desc: dataAPI.weather[0].description,
             temp_min: Math.round(dataAPI.main.temp_min),
             temp_max: Math.round(dataAPI.main.temp_max),
